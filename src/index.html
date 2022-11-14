@@ -103,21 +103,28 @@
       <fieldset class="fieldset">
         <legend>An interesting fact about you!</legend>
 
-        <label class="fieldset-option">
+        <div class="fieldset-option">
           Do you love cats?
-          <input
-            type="radio"
-            name="choice" 
-            value="yes"
-          >
-          Yes
-          <input
-            type="radio"
-            name="choice"
-            value="no"
-          >
-          No
-        </label>
+          <label for="yes">
+            <input
+              type="radio"
+              name="choice" 
+              value="yes"
+              id="yes"
+            >
+            Yes
+          </label>
+          <label for="no">
+            <input
+              type="radio"
+              name="choice"
+              value="no"
+              id="no"
+            >
+            No
+          </label>
+        </div>
+
         
         
         <label for="color" class="fieldset-option">
@@ -174,8 +181,7 @@
             id="comments"
             cols="20"
             rows="2"
-          >
-          </textarea>
+          ></textarea>
         </label>
 
         <label for="question">
